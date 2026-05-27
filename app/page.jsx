@@ -125,3 +125,16 @@ const cardStyle = {
   padding: "28px",
   boxShadow: "0 0 35px rgba(0,229,255,.08)",
 };
+<section style={{ padding: "40px 32px" }}>
+  <h2 style={{ fontSize: "2.5rem" }}>
+    Choose your tool
+  </h2>
+
+  <div style={{ display: "grid", gap: "18px" }}>
+    {["Generate a clothing concept", "Create a horror story idea", "Build a brand caption"].map((tool) => (
+      <button key={tool} style={darkButtonStyle}>
+        {tool}
+      </button>
+    ))}
+  </div>
+</section>
