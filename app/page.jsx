@@ -5,7 +5,67 @@ import { useState } from "react";
 export default function Home() {
   const [idea, setIdea] = useState("");
   const [result, setResult] = useState("");
+const buttonStyle = {
+  background: "linear-gradient(90deg,#00e5ff,#8b5cf6,#c026ff)",
+  color: "white",
+  border: "none",
+  borderRadius: "16px",
+  padding: "16px 24px",
+  fontWeight: "bold",
+  fontSize: "1rem",
+  boxShadow: "0 0 30px rgba(192,38,255,.35)",
+};
 
+const darkButtonStyle = {
+  background: "rgba(255,255,255,.06)",
+  color: "white",
+  border: "1px solid rgba(255,255,255,.18)",
+  borderRadius: "16px",
+  padding: "16px 24px",
+  fontWeight: "bold",
+  fontSize: "1rem",
+};
+
+const dashboardStyle = {
+  position: "relative",
+  marginTop: "70px",
+  background: "rgba(15,23,42,.72)",
+  border: "1px solid rgba(0,229,255,.28)",
+  borderRadius: "28px",
+  padding: "24px",
+  boxShadow: "0 0 50px rgba(0,229,255,.12), 0 0 60px rgba(192,38,255,.12)",
+};
+
+const inputStyle = {
+  background: "rgba(0,0,0,.35)",
+  border: "1px solid rgba(255,255,255,.12)",
+  borderRadius: "18px",
+  padding: "22px",
+  color: "#64748b",
+};
+const cardStyle = {
+  background: "rgba(15,23,42,.75)",
+  border: "1px solid rgba(255,255,255,.1)",
+  borderRadius: "24px",
+  padding: "28px",
+  boxShadow: "0 0 35px rgba(0,229,255,.08)",
+};
+const miniCardStyle = {
+  background: "linear-gradient(135deg, rgba(0,229,255,.14), rgba(192,38,255,.12))",
+  border: "1px solid rgba(255,255,255,.12)",
+  borderRadius: "18px",
+  padding: "26px",
+  minHeight: "80px",
+};
+
+const cardStyle = {
+  background: "rgba(15,23,42,.75)",
+  border: "1px solid rgba(255,255,255,.1)",
+  borderRadius: "24px",
+  padding: "28px",
+  boxShadow: "0 0 35px rgba(0,229,255,.08)",
+};
+</main>
   const features = ["AI Generation", "Mockup Studio", "Brand Kit", "Instant Export"];
 const buttonStyle = {
   background: "linear-gradient(90deg, #00e5ff, #c026ff)",
@@ -87,66 +147,3 @@ const gradientText = {
   color: "transparent",
 };
 
-const buttonStyle = {
-  background: "linear-gradient(90deg,#00e5ff,#8b5cf6,#c026ff)",
-  color: "white",
-  border: "none",
-  borderRadius: "16px",
-  padding: "16px 24px",
-  fontWeight: "bold",
-  fontSize: "1rem",
-  boxShadow: "0 0 30px rgba(192,38,255,.35)",
-};
-
-const darkButtonStyle = {
-  background: "rgba(255,255,255,.06)",
-  color: "white",
-  border: "1px solid rgba(255,255,255,.18)",
-  borderRadius: "16px",
-  padding: "16px 24px",
-  fontWeight: "bold",
-  fontSize: "1rem",
-};
-
-const dashboardStyle = {
-  position: "relative",
-  marginTop: "70px",
-  background: "rgba(15,23,42,.72)",
-  border: "1px solid rgba(0,229,255,.28)",
-  borderRadius: "28px",
-  padding: "24px",
-  boxShadow: "0 0 50px rgba(0,229,255,.12), 0 0 60px rgba(192,38,255,.12)",
-};
-
-const inputStyle = {
-  background: "rgba(0,0,0,.35)",
-  border: "1px solid rgba(255,255,255,.12)",
-  borderRadius: "18px",
-  padding: "22px",
-  color: "#64748b",
-};
-const cardStyle = {
-  background: "rgba(15,23,42,.75)",
-  border: "1px solid rgba(255,255,255,.1)",
-  borderRadius: "24px",
-  padding: "28px",
-  boxShadow: "0 0 35px rgba(0,229,255,.08)",
-};
-const miniCardStyle = {
-  background: "linear-gradient(135deg, rgba(0,229,255,.14), rgba(192,38,255,.12))",
-  border: "1px solid rgba(255,255,255,.12)",
-  borderRadius: "18px",
-  padding: "26px",
-  minHeight: "80px",
-};
-
-const cardStyle = {
-  background: "rgba(15,23,42,.75)",
-  border: "1px solid rgba(255,255,255,.1)",
-  borderRadius: "24px",
-  padding: "28px",
-  boxShadow: "0 0 35px rgba(0,229,255,.08)",
-};
-</main>
-  );
-}
