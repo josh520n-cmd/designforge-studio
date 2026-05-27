@@ -1,6 +1,22 @@
-export default function Home() {
-  const features = ["AI Generation", "Mockup Studio", "Brand Kit", "Instant Export"];
+"use client";
 
+import { useState } from "react";
+
+export default function Home() {
+  const [idea, setIdea] = useState("");
+  const [result, setResult] = useState("");
+
+  const features = ["AI Generation", "Mockup Studio", "Brand Kit", "Instant Export"];
+const buttonStyle = {
+  background: "linear-gradient(90deg, #00e5ff, #c026ff)",
+  border: "none",
+  color: "white",
+  padding: "16px 28px",
+  borderRadius: "18px",
+  fontWeight: "bold",
+  fontSize: "1rem",
+  cursor: "pointer",
+};
   return (
     <main style={{ minHeight: "100vh", background: "#030712", color: "white", fontFamily: "Arial", overflow: "hidden" }}>
       <section style={{ position: "relative", padding: "32px", minHeight: "100vh" }}>
