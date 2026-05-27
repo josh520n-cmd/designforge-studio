@@ -147,3 +147,6 @@ const cardStyle = {
   padding: "28px",
   boxShadow: "0 0 35px rgba(0,229,255,.08)",
 };
+</main>
+  );
+}
