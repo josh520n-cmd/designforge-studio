@@ -125,7 +125,13 @@ const inputStyle = {
   padding: "22px",
   color: "#64748b",
 };
-
+const cardStyle = {
+  background: "rgba(15,23,42,.75)",
+  border: "1px solid rgba(255,255,255,.1)",
+  borderRadius: "24px",
+  padding: "28px",
+  boxShadow: "0 0 35px rgba(0,229,255,.08)",
+};
 const miniCardStyle = {
   background: "linear-gradient(135deg, rgba(0,229,255,.14), rgba(192,38,255,.12))",
   border: "1px solid rgba(255,255,255,.12)",
@@ -141,21 +147,3 @@ const cardStyle = {
   padding: "28px",
   boxShadow: "0 0 35px rgba(0,229,255,.08)",
 };
-<section style={{ padding: "40px 32px" }}>
-  <h2 style={{ fontSize: "2.5rem" }}>
-    Choose your tool
-  </h2>
-
-  <div style={{ display: "grid", gap: "18px" }}>
-    {["Generate a clothing concept", "Create a horror story idea", "Build a brand caption"].map((tool) => (
-      <button key={tool} style={darkButtonStyle}>
-        {tool}
-      </button>
-    ))}
-  </div>
-</section>
-</main>
-  );
-}
-);
-}
