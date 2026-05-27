@@ -1,4 +1,4 @@
-"use client";
+p"use client";
 
 import { useState } from "react";
 
@@ -154,5 +154,8 @@ const cardStyle = {
     ))}
   </div>
 </section>
+</main>
+  );
+}
 );
 }
