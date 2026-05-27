@@ -110,7 +110,41 @@ const buttonStyle = {
 
         <div style={dashboardStyle}>
           <div style={{ color: "#00e5ff", fontWeight: "bold", marginBottom: "16px" }}>STUDIO DASHBOARD</div>
-          <div style={inputStyle}>Describe your idea...</div>
+          <div style={inputStyle}><textarea
+  value={idea}
+  onChange={(e) => setIdea(e.target.value)}
+  placeholder="Describe your idea..."
+  style={{
+    ...inputStyle,
+    width: "100%",
+    minHeight: "120px",
+    fontSize: "1rem",
+    resize: "vertical",
+  }}
+/>
+
+<button
+  onClick={() =>
+    setResult(
+      `DesignForge Concept:\n\n${idea}\n\nTurn this into a futuristic neon cyberpunk brand concept.`
+    )
+  }
+  style={{ ...buttonStyle, marginTop: "18px" }}
+>
+  Generate
+</button>
+
+{result && (
+  <div
+    style={{
+      ...cardStyle,
+      marginTop: "18px",
+      whiteSpace: "pre-wrap",
+    }}
+  >
+    {result}
+  </div>
+)}</div>
 
           <div style={{ display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(140px, 1fr))", gap: "14px", marginTop: "18px" }}>
             {["Cyber hoodie", "Neon logo", "Dark ad", "Mockup"].map((item) => (
