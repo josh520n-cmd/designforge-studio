@@ -154,3 +154,5 @@ const cardStyle = {
     ))}
   </div>
 </section>
+);
+}
